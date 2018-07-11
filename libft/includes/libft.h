@@ -28,5 +28,10 @@ int					ft_isblank(int c);
 int					ft_isspace(int c);
 size_t			ft_strlen(const char *s);
 int					ft_isprint(int c);
+int					ft_max(int x, int y);
+int					ft_isascii(int chr);
+char					*ft_itoa(int n);
+int					ft_isalnum(int chr);
+
 
 #endif
