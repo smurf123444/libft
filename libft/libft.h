@@ -6,7 +6,7 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:05:22 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/11 18:49:10 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/12 09:33:18 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ char					*ft_itoa(int n);
 int					ft_isalnum(int chr);
 int					ft_isdigit(int c);
 char				ft_strnew(size_t size);
+void					*ft_memset(void *dst, int data, size_t len);
 
 
 #endif
