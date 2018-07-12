@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/11 18:21:08 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/11 18:25:19 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/11 18:41:47 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/11 18:44:17 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isalnum(int c)
+char	*ft_strnew(size_t size)
 {
-	return(ft_isdigit(c) || ft_isalpha(c));
+	char	*str;
+
+	str = (char *)malloc(sizeof(char) * size + 1);
+	if (!str)
+		return (NULL);
+	ft_bzero(str, size + 1);
+	return (str);
 }
