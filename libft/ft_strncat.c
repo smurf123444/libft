@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	*strncat(char *s1, const char *s2, size_t len)
+char	*ft_strncat(char *s1, const char *s2, size_t len)
 {
 	char *s1iter;
 
