@@ -12,18 +12,15 @@
 
 #include <string.h>
 
-void		*ft_memset(void *b, int c, size_t len)
+void		*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*cur;
+	size_t i;
 
-	if (len == 0)
-		return(b)
-			cur = (unsigned char)c;
-	while (len--)
+	i = 0;
+	while (n > i)
 	{
-	*cur = (unsigned char)c;
-	if (len)
-		cur++;
+		((unsigned char *)src)[i] = ((unsigned char *)dst)[i];
+		i++;
 	}
-	return (b);
+	return (dst);
 }
