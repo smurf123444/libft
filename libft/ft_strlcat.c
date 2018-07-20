@@ -1,38 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/19 23:29:07 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/19 23:57:44 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/19 23:41:45 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/19 23:45:04 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
-	char	*s;
-	int		i;
-	int		len;
-	int		sign;
+	size_t ld;
+	size_t ls;
+	size_t i;
 
-	sign = (n < 0) ? -1 : 1;
-	i = n;
-	len = 0;
-	while (i && ++len)
-		i = i / 10;
-	i = (n > 0) ? (len + 1) : (len + 2);
-	if (!(s = (char *)malloc(i * sizeof(char))))
-		return (NULL);
-	s[--i] = '\0';
-	while (--i)
+	ld = ft_strlen(dst);
+	ls = ft_strlen(src);
+	if (dstsize == 0 || ld > dstsize - 1)
+		return (dstsize + ls);
+	i = 0;
+	while (i < dstsize - ld - 1)
 	{
-		s[i] = '0' + sign * (n % 10);
-		n /= 10;
+		dst[ld + i] = src[i];
+		i++;
 	}
-	s[0] = (sign < 0) ? '-' : '0' + n;
-	return (s);
+	dst[ld + i] = '\0';
+	return (ld + ls);
 }
