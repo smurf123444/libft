@@ -5,11 +5,6 @@ This Libft file is a compilation of different functions required in our first as
 
 42FileChecker Results so far 07/19/2018 7:18 p.m. PST
 
-Not Found: ft_strlcat.c
-Not Found: ft_strnstr.c
-Not Found: ft_strclr.c
-Not Found: ft_strncpy.c
-Not Found: ft_strdel.c
 Not Found: ft_strequ.c
 Not Found: ft_strnequ.c
 Not Found: ft_striter.c
