@@ -6,7 +6,7 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:05:22 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/19 12:39:45 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/22 11:12:39 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct 		s_list
 	struct s_list *next;
 }						t_list;
 
+void				ft_putchar(char *c);
 int					ft_isalpha(char c);
 int					ft_atoi(const char *str);
 int					ft_isblank(int c);
@@ -46,7 +47,7 @@ char					*ft_strchr(const char *s, int c);
 int					ft_strcmp(const char *s1, const char *s2);
 char					*ft_strdup(const char *s1);
 char					*ft_strncat(char *s1, const char *s2, size_t len);
-char				ft_strncmp(const char *s1, const char *s2, size_t len);
+int				ft_strncmp(const char *s1, const char *s2, size_t len);
 char					*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char					*ft_strrchr(const char *s, int c);
 char					*ft_strstr(const char *s1, const char *s2);
@@ -55,6 +56,6 @@ int					ft_toupper(int c);
 void					ft_strrev(char *s);
 char					*ft_strcpy(char *dst, const char *src);
 void					*ft_memcpy(void *b, const void *c, size_t len);
-void					*ft_memccpy(void *
+void					*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
 
 #endif

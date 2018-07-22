@@ -6,7 +6,7 @@
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/20 22:35:09 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/20 22:38:01 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/22 11:10:53 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	char	*s;
+	char	*a;
 	int		i;
 
 	if (s == NULL || f == NULL)

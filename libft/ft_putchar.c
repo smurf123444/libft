@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/20 15:46:15 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/22 11:09:55 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/22 10:12:41 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/22 10:32:18 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-void		ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_putchar(char *c)
 {
-	int		i;
-
-	if (s == NULL || f == NULL)
-		return ;
-	i = -1;
-	while (*s != '\0')
-	{
-		f((unsigned char)(++i), s);
-		s++;
-	}
+	write(1, &c, 1);
 }

@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/20 15:46:15 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/22 11:09:55 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/22 10:38:29 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/22 10:43:45 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_putnbr(int n)
 {
-	int		i;
+	char	num[20];
+	int			i;
+	int			sign;
 
-	if (s == NULL || f == NULL)
-		return ;
-	i = -1;
-	while (*s != '\0')
+	if (n == 0)
+		write(1, "0", 1);
+	else if (n < 0)
+		write(1, "-", 1);
+	sign = (n > 0) ? 1 : -1;
+	i = 0;
+	while (n)
 	{
-		f((unsigned char)(++i), s);
-		s++;
+		num[i++] = '0' + (n % 10) * sign;
+		n /= 10;
 	}
+	while (--i >= 0)
+		write(1, &(num[i]), 1);
 }

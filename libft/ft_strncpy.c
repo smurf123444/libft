@@ -6,7 +6,7 @@
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/19 23:54:04 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/19 23:55:54 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/22 11:11:30 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char		*ft_strncpy(char *dst, const char *src, size_t len)
 	size_t	i;
 
 	i = 0;
-	while (sr[i] != '\0' && i < len)
+	while (src[i] != '\0' && i < len)
 	{
-		dst[i] = src[i]
+		dst[i] = src[i];
 			i++;
 	}
 	while (i < len)
