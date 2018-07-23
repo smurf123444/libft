@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_letters.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/22 10:50:29 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/23 15:40:26 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/23 15:10:57 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/23 15:12:37 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char const *s, int fd)
+int		ft_letters(char const *s, int p, char c)
 {
-	if (s == NULL)
-		return ;
-	write(fd, s, ft_strlen(s));
-	write(fd, "\n", 1);
+	int		k;
+
+	k = 0;
+	while (s[p] != c && s[p] != '\0')
+	{
+		k++;
+		p++;
+	}
+	return (k);
 }
