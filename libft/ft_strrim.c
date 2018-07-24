@@ -6,13 +6,13 @@
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/20 22:43:40 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/23 14:37:27 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/24 15:55:04 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+char	*ft_strrim(char const *s)
 {
 	char	*x;
 	int		i;

@@ -6,7 +6,7 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:05:22 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/23 16:01:51 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/24 15:58:15 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_words(char const *s, char c);
 int					ft_letters(char const *s, int p, char c);
+char				*ft_strrim(char const *s);
 
 
 #endif
