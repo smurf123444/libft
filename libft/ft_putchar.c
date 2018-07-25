@@ -6,14 +6,13 @@
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/22 10:12:41 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/23 16:02:29 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/25 09:55:30 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
-void	ft_putchar(char *c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }

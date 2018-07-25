@@ -6,13 +6,13 @@
 /*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/16 23:50:15 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/16 23:52:49 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/24 18:56:03 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_tolower(int c)
 {
-	if (65 <= c && 90 <= c)
+	if (65 <= c && 90 >= c)
 		return (c - 'A' + 'a');
 	else
 		return (c);

@@ -6,7 +6,7 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:01:09 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/19 12:13:09 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/24 18:56:57 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,22 @@
 
 int		ft_atoi(const char *str)
 {
-	int		i;
-	int		num;
-	int		sign;
+	int						i;
+	int						sign;
+	unsigned long long int	num;
 
 	i = 0;
-	num = 0;
 	sign = 1;
-	while (*(str + i) == '\n' ||
-			*(str + i) == '\t' ||
-			*(str + i) == '\r' ||
-			*(str + i) == '\v' ||
-			*(str + i) == '\f' ||
-			*(str + i) == ' ')
-			i++;
-	if (*(str + i) == '-')
-	sign = -1;
-	if (*(str + i) == '-' || *(str + i) <= '9')
-		num = num * 10 + (*(str + i++) - '0');
-	return (num * sign);
+	num = 0;
+	while ((str[i] == ' ') || (str[i] == '\t') || (str[i] == '\n') ||
+			(str[i] == '\v') || (str[i] == '\f') || (str[i] == '\r'))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
+		sign = (str[i++] == '-') ? -1 : 1;
+	while ('0' <= str[i] && str[i] <= '9')
+		num = num * 10 + str[i++] - '0';
+	if (num > 9223372036854775807)
+		return ((sign == 1) ? -1 : 0);
+	return (sign * (int)num);
 }
 			
