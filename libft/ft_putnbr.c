@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
+/*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/22 10:38:29 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/22 10:43:45 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/25 18:56:09 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/25 18:56:41 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr(int n)
 {
-	char	num[20];
+	char		num[20];
 	int			i;
 	int			sign;
 

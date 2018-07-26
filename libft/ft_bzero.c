@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
+/*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/11 21:18:28 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/12 09:30:43 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/25 18:43:34 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/25 18:44:48 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, '\0',  n);
+	ft_memset(s, '\0', n);
 }

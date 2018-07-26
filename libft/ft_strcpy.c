@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
+/*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/19 11:22:42 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/19 11:35:54 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/25 18:59:51 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/25 19:00:44 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-		char *src2;
+	char *src2;
 
-		src2 = dst;
-		while (*src != '\0')
-			*dst++ = *src++;
+	src2 = dst;
+	while (*src != '\0')
+	{
+		*dst++ = *src++;
 		*dst = '\0';
-		return (src2);
+	}
+	return (src2);
 }

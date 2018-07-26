@@ -6,7 +6,7 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:05:22 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/25 09:02:45 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/25 18:39:09 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
-typedef struct 		s_list
+
+typedef struct		s_list
 {
 	void			*content;
 	size_t			content_size;
-	struct s_list *next;
-}						t_list;
+	struct s_list	*next;
+}					t_list;
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
@@ -51,7 +52,7 @@ int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_atoi(const char *str);
 int					ft_isalpha(int c);
-int					ft_isblank(char c);
+int					ft_isblank(int c);
 int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
@@ -85,6 +86,5 @@ void				ft_putnbr_fd(int n, int fd);
 int					ft_words(char const *s, char c);
 int					ft_letters(char const *s, int p, char c);
 char				*ft_strrim(char const *s);
-
 
 #endif

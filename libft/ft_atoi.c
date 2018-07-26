@@ -6,7 +6,7 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:01:09 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/24 18:56:57 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/25 18:42:54 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ int		ft_atoi(const char *str)
 		return ((sign == 1) ? -1 : 0);
 	return (sign * (int)num);
 }
-			

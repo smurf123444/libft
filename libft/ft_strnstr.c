@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
+/*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/19 23:45:34 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/19 23:50:59 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/25 19:13:43 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/25 19:13:46 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		if (*s1 == *s2)
 		{
 			i = 0;
-				while (*(s1 + i) == *(s2 + i) && len - i)
-				{
-					i++;
-					if (*(s2 + i) == '\0')
-						return (s1);
-				}
+			while (*(s1 + i) == *(s2 + i) && len - i)
+			{
+				i++;
+				if (*(s2 + i) == '\0')
+					return (s1);
+			}
 		}
 		len--;
 		s1++;

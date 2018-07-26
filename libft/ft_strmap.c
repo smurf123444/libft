@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
+/*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/20 22:35:09 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/22 11:10:53 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/25 19:08:43 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/25 19:09:02 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	i = -1;
 	while (s[++i] != '\0')
 		a[i] = f(s[i]);
-	a[i] ='\0';
+	a[i] = '\0';
 	return (a);
 }

@@ -6,11 +6,13 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:02:20 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/10 22:03:20 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/25 17:52:35 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isblank(char c)
+#include "libft.h"
+
+int		ft_isblank(int c)
 {
-	return (c == ' ' || c == '\t' || c == '\n');
+	return (c == ' ' || c == '\t');
 }

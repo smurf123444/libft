@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
+/*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/20 15:44:13 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/20 15:45:58 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/25 19:03:30 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/25 19:06:37 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_striter(char *s, void(*f)(char *))
+void		ft_striter(char *s, void (*f)(char *))
 {
 	if (s == NULL || f == NULL)
 		return ;

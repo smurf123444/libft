@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmannin <christopherdonaldmanning@gm      +#+  +:+       +#+        */
+/*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/19 23:56:10 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/19 23:57:35 by chmannin         ###   ########.fr       */
+/*   Created: 2018/07/25 19:01:28 by chmannin          #+#    #+#             */
+/*   Updated: 2018/07/25 19:01:49 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ void	ft_strdel(char **as)
 	free(*as);
 	*as = NULL;
 }
-
