@@ -3,7 +3,7 @@
 This Libft file is a compilation of different functions required in our first assignment as Cadet in 42.us.org. 
 
 
-All errors fixed and corrected for Norm, Maintest passes on 42filechecker, only missing bonus questions.
+Still a tiny error in strcpy (ughhhh) will update repo in about an hour!
 
 
 Check me out on Steemit.com/@smurf123444
