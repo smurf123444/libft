@@ -6,7 +6,7 @@
 /*   By: chmannin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/10 22:05:22 by chmannin          #+#    #+#             */
-/*   Updated: 2018/07/25 18:39:09 by chmannin         ###   ########.fr       */
+/*   Updated: 2018/07/28 11:00:26 by chmannin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,11 @@ void				ft_putnbr_fd(int n, int fd);
 int					ft_words(char const *s, char c);
 int					ft_letters(char const *s, int p, char c);
 char				*ft_strrim(char const *s);
+t_list				*ft_lstnew(void const *content, size_t content_size);
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstadd(t_list **alst, t_list *new);
 
 #endif
